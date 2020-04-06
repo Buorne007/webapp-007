@@ -1,4 +1,4 @@
 <?php
 
 $title = "Home";
-$content = include("homepage.php");
+$content = include("content/template/tema1.php");
