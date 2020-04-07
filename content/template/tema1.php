@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
-
+//the path to stylesheet goes here
     <title>
         <?php echo $title; ?>
     </title>
