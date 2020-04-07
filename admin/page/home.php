@@ -4,7 +4,7 @@ $title = "Homepage";
 
 <h3><?php echo $title; ?></h3>
 <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas mi eget arcu ornare, sit amet euismod tortor viverra.
+    <a href="?page=404.php">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas mi eget arcu ornare, sit amet euismod tortor viverra.
     Integer nec consectetur ligula, rutrum efficitur leo. Quisque quis volutpat mi, sed malesuada leo.
     Aliquam eget erat a turpis imperdiet molestie ut quis tellus. Phasellus et consectetur lectus, quis pretium justo.
     Aliquam erat volutpat. Morbi et arcu vitae ante accumsan tincidunt a in velit.

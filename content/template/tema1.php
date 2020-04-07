@@ -14,13 +14,14 @@
 </head>
 
 <body>
+<div id="wrapper" class="wrapper">
     <!-- load page contents -->
     <?php include ("admin/section/content-area.php")?>
         <!-- load sidebar -->
         <?php include ("admin/section/sidebar.php")?>
             <!-- load sidebar -->
             <?php include ("admin/section/footer.php")?>
-
+</div>
 </body>
 
 </html>
