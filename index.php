@@ -1,4 +1,4 @@
 <?php
 
-$title = "Home";
-$content = include("content/template/tema1.php");
+$title = "Homepage";
+require("content/template/tema1.php");

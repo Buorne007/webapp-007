@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACA,IAAI,CACF,SAAS,CAAE,OAAO",
+"sources": ["tema1.scss"],
 "names": [],
 "file": "tema1.css"
 }
