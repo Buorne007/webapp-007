@@ -1,4 +1,4 @@
-<div id="content-area">
+<div id="content-area" class="container content-area">
     <?php
     //p is a variable used to store returned pagelink
     if(isset($_GET['page'])){

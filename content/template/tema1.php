@@ -5,24 +5,21 @@
     <link rel="stylesheet" type="text/css" href="content/Stylesheet/tema1.css">
 
     <title>
-        <?php echo $title; ?>
+        <?php /*dynamic get & place title here*/
+            echo $title;
+        ?>
     </title>
-
+    <!-- load header here -->
     <?php include ("admin/section/header.php")?>
 </head>
 
 <body>
-    <div id="wrapper" class="container content-area">
-        <?php include ("admin/section/content-area.php")?>
-    </div>
-
-    <div id="sidebar" class="sidebar">
+    <!-- load page contents -->
+    <?php include ("admin/section/content-area.php")?>
+        <!-- load sidebar -->
         <?php include ("admin/section/sidebar.php")?>
-    </div>
-
-    <div id="footer" class="footer">
-        <?php include ("admin/section/footer.php")?>
-    </div>
+            <!-- load sidebar -->
+            <?php include ("admin/section/footer.php")?>
 
 </body>
 
