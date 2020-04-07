@@ -2,10 +2,10 @@
     <?php
     //x is a variable used to store returned pagelink
     $p = $_GET['page'];
-    $page="sub/".$p.".php";
+    $page="admin/page/".$p.".php";
     if(file_exists($page)){
         include($page);
-    } else if($page==""){
+    } else if($p==""){
         include ("index.php");
     } else{
         include ("admin/page/404.php");
