@@ -11,9 +11,11 @@
     </div>
 -->
     <div id="logo-main" class="logo-main">
+        <a href="?page=">
         <img alt="Logo" src=<?php echo $logo_main?> >
+        </a>
     </div>
 
-    <?php include("admin/section/nav-menu.php"); ?>
+    <?php require "admin/section/nav-menu.php"; ?>
 
 </div>

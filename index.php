@@ -1,4 +1,4 @@
 <?php
 
 $title = "Homepage";
-require("content/template/tema1.php");
+require"content/template/tema1.php";

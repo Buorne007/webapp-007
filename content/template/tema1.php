@@ -16,11 +16,11 @@
 <body>
 <div id="wrapper" class="wrapper">
     <!-- load page contents -->
-    <?php include ("admin/section/content-area.php")?>
+    <?php require "admin/section/content-area.php";?>
         <!-- load sidebar -->
-        <?php include ("admin/section/sidebar.php")?>
+        <?php require"admin/section/sidebar.php";?>
             <!-- load sidebar -->
-            <?php include ("admin/section/footer.php")?>
+            <?php require "admin/section/footer.php";?>
 </div>
 </body>
 

@@ -1,3 +1,3 @@
 <div id="nav-menu" class="nav-menu">
-    <a href="?page=home">Home</a>
+    <a href="?page=">Home</a>
 </div>
