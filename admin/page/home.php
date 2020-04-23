@@ -1,8 +1,10 @@
 <?php
-$title = "Homepage";
+$page_title = "Automation Portal ";
+echo"<title> $page_title - $site</title>";
 ?>
 
-<h3><?php echo $title; ?></h3>
+<div id="page-title" class="page-title title-left title-center"><h3><?php echo $page_title; ?></h3></div>
+<div id="page-content" class="page-content">
 <p>
     <a href="?page=404.php">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas mi eget arcu ornare, sit amet euismod tortor viverra.
     Integer nec consectetur ligula, rutrum efficitur leo. Quisque quis volutpat mi, sed malesuada leo.
@@ -44,4 +46,4 @@ $title = "Homepage";
     Pellentesque vel tellus arcu. Sed fermentum pulvinar malesuada. Vivamus consectetur sapien ut ultrices lobortis.
 </p>
 
-
+</div>

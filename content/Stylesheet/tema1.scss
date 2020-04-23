@@ -1,40 +1,205 @@
 @import "variables.scss";
+@import "fontawesome/scss/fontawesome.scss";
+@import "fontawesome/scss/solid.scss";
+@import "fontawesome/scss/brands.scss";
 
 /*template properties*/
+
+/**font awsome**/
+.user{
+  @extend %fa-icon;
+  @extend .fas;
+  &:before{
+    content: fa-content($fa-var-user);
+  }
+}
+
+/*fontawsome icon*/
+.icone{
+  padding-right: 10px;
+}
+
+/*end*/
+
+/* global properties*/
+html, body {
+  margin: 0;
+}
+
+#{$link}{
+  text-decoration: none;
+  color: inherit;
+}
+
+#{$links}{
+  color: $deep-blue;
+  border-bottom: 2px solid $deep-blue;
+}
+
+/**** uncomment to enable ***
+.title-left{
+  text-align: left;
+}
+****/
+
+
+.title-center{
+  text-align: center;
+}
+
+.page-title{
+  color: $deep-blue;
+  width: 800px;
+  background: $light-blue;
+  padding: 20px 0;
+  font-size: larger;
+  text-transform: uppercase;
+}
+.page-content{
+  padding: 5px 30px;
+}
+
+
+/*Global properties ends*/
+
+
+/* Header properties*/
+.header{
+  width: auto;
+  height: 101px;
+  margin-bottom: 30px;
+
+  /*** uncomment to enable mini logo ***
+  .logo-icon{
+    float: left;
+      img{
+        display: block;
+        width: 50px;
+      }
+  }
+*/
+  .logo-main{
+    .logo-left img{
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
+  #{$links}{
+    border-bottom: none;
+  }
+
+  }
+
+  .nav-menu .header-menu{
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+    margin-right: 100px;
+    padding: 40px;
+
+    ul {
+      list-style-type: none;
+      display: inline-block;
+      li{
+        display: inherit;
+        padding-bottom: 10px;
+
+      }
+    }
+  }
+}
+
+/*body*/
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
 .wrapper{
   clear: both;
-
 
 }
 
 .content-area{
-  float: left;
-  width: 750px;
-  margin: 0 0 0 50px;
-  padding: 10px;
+
+  width: 770px;
+  height: auto;
+  margin: 0 0 0 60px;
 }
 
 .sidebar{
-  float: right;
-  width: 250px;
-  height: 400px;
-  padding: 10px 20px;
-  border: 2px solid $deep-blue;
-  margin: 20px 40px 20px 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 40px;
+
+  width: 20%;
+  height: 100%;
+  min-height: 800px;
+  padding: 0;
+  margin-bottom: 25px;
+  background: $brown;
+  //border-left: 15px solid $brown;
+  color: $white;
+
+
+
+  .sidebar-menu{
+    overflow: hidden;
+    display: block;
+
+    ul {
+      list-style-type: none;
+      display: inherit;
+      padding: 15px 0 0 0;
+      margin-top: 0;
+      margin-left: 20px;
+
+      :first-child{
+        //padding-top: 30;
+      }
+
+
+      li{
+        display: inherit;
+        padding: 30px 0 30px 15px;
+        text-decoration: none;
+        border-bottom: 2px solid #363D47;
+        vertical-align: center;
+
+          &:hover, &:active{
+            background: $white;
+            color: $brown;
+          }
+        :hover{
+         border-bottom: none;
+        }
+        :active{
+        color: pink;
+      }
+
+      }
+    }
+
+  }
 
 }
 
+/*Forms*/
+
+/*end of Forms*/
+
+/*Footer properties*/
 .footer{
   color: $white;
   background: $deep-blue;
   clear: both;
   width: auto;
   height: 40px;
-  padding: 10px 0;
-  //margin: 10px 0 0 0;
+  padding: 10px 0 0 0;
+  //margin: 10px -8px -15px -8px;
+
   text-align: center;
   text-shadow: 0.1em $red;
   a{
@@ -48,52 +213,6 @@
 
   h5{
     margin: 10px 0;
-  }
-
-
-}
-
-/* Header properties*/
-.header{
-  width: auto;
-  height: 101px;
-  margin-bottom: 30px;
-
-
-  /*** uncomment to enable mini logo ***
-  .logo-icon{
-    float: left;
-      img{
-        display: block;
-        width: 50px;
-      }
-  }
-*/
-  .logo-main{
-    img{
-      display: inline-block;
-      float: left;
-      margin-left: 50px;
-      margin-right: auto;
-      width: 400px;
-    }
-  }
-
-  .nav-menu{
-    overflow: hidden;
-    display: inline-block;
-    float: right;
-    margin-left: auto;
-    margin-right: 100px;
-    padding: 40px;
-
-    ul {
-        list-style-type: none;
-        display: inline-block;
-      li{
-        display: inherit;
-      }
-    }
   }
 
 
