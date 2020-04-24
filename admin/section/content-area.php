@@ -1,5 +1,4 @@
 <div id="content-area" class="container left content-area">
-
     <?php
     //p is a variable used to store returned pagelink
     if(isset($_GET['page'])){
@@ -10,7 +9,7 @@
             } else if($p==""){
                 include ("admin/page/home.php");
             } else{
-                include ("admin/page/404.php");
+                include("admin/page/Status.php");
             }
     } else{
         include ("admin/page/home.php");
