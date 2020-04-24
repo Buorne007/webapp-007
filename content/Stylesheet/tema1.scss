@@ -157,29 +157,37 @@ html, body {
       margin-top: 0;
       margin-left: 20px;
 
+
       :first-child{
         //padding-top: 30;
       }
 
 
-      li{
-        display: inherit;
-        padding: 30px 0 30px 15px;
-        text-decoration: none;
-        border-bottom: 2px solid #363D47;
-        vertical-align: center;
+      li {
 
-          &:hover, &:active{
-            background: $white;
-            color: $brown;
+          a{
+            display: inherit;
+            padding: 30px 0 30px 15px;
+            text-decoration: none;
+            vertical-align: center;
+            color: $white;
+            border-radius: 6px 0 0 6px;
+
+            &:hover{
+              background: $brown_opa;
+              color: inherit;
+              border-bottom: none;
+            }
+
+            &.active{
+              background: $white;
+              color: $brown;
+              // border-bottom: none;
+            }
+
           }
-        :hover{
-         border-bottom: none;
-        }
-        :active{
-        //color: pink;
-      }
 
+        border-bottom: 2px solid #363D47;
       }
     }
 

@@ -1,4 +1,5 @@
 <?php
+$page='single-ss';
 $page_title= "Start & Stop Portal";
 echo"<title> $page_title - $site</title>";
 ?>
@@ -14,29 +15,22 @@ echo"<title> $page_title - $site</title>";
             <!-- Text input-->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Machine Name</label>
-                <div class="col-md-4">
                     <input id="textinput" name="textinput" type="text" placeholder="enter machine name" class="form-control input-md" required="">
-
-                </div>
             </div>
 
             <!-- Multiple Radios -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="vm_action">Action</label>
-                <div class="col-md-4">
                     <div class="radio">
                         <label for="vm_action-0">
                             <input type="radio" name="vm_action" id="vm_action-0" value="startvm" checked="checked">
                             start vm
                         </label>
-                    </div>
-                    <div class="radio">
                         <label for="vm_action-1">
                             <input type="radio" name="vm_action" id="vm_action-1" value="stopvm">
                             stop vm
                         </label>
                     </div>
-                </div>
             </div>
 
             <!-- Button -->
