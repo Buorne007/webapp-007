@@ -37,6 +37,10 @@ html, body {
   border-bottom: 2px solid $deep-blue;
 }
 
+.container {
+  padding: 10px;
+}
+
 /**** uncomment to enable ***
 .title-left{
   text-align: left;
@@ -67,8 +71,8 @@ html, body {
 /* Header properties*/
 .header{
   width: auto;
-  height: 101px;
-  margin-bottom: 30px;
+  height: 70px;
+  margin: 0 100px 30px 100px;
 
   /*** uncomment to enable mini logo ***
   .logo-icon{
@@ -80,34 +84,41 @@ html, body {
   }
 */
   .logo-main{
-    .logo-left img{
-      display: block;
-      float: left;
-      width: 50%;
-    }
-
-  #{$links}{
-    border-bottom: none;
-  }
-
-  }
-
-  .nav-menu .header-menu{
-    overflow: hidden;
     display: inline-block;
+    max-width: 50%;
+      img{
+        width: 70%;
+      }
+
+    #{$links}{
+      border-bottom: none;
+    }
+  }
+
+  .header-menu{
+    overflow: hidden;
+    display: block;
     float: right;
     margin-left: auto;
-    margin-right: 100px;
-    padding: 40px;
+    padding-right: 20px;
+    font-size: 15px;
 
     ul {
       list-style-type: none;
       display: inline-block;
+      padding: 10px 0;
       li{
         display: inherit;
-        padding-bottom: 10px;
+        padding-right: 15px;
 
       }
+    }
+    #{$links}{
+      border-bottom: none;
+    }
+
+    .icone{
+      padding-right: 0;
     }
   }
 }

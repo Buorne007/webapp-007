@@ -16,7 +16,7 @@
         </a>
     </div>
 
-    <!-- // uncomment to enable menu in header //
-    <?php require "admin/section/nav-menu.php"; ?>
--->
+    <!-- comment to enable menu in header // -->
+    <?php require "admin/section/menu-head.php"; ?>
+
 </div>

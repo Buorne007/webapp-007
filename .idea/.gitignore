@@ -1,2 +1,4 @@
 # Default ignored files
 /workspace.xml
+#do not store .env file on git repo
+.env

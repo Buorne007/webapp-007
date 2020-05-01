@@ -1,0 +1,9 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "microsoft/microsoft-graph": "^1.13",
+        "league/oauth2-client": "^2.4",
+        "laravel/installer": "^3.0",
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
