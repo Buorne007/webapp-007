@@ -61,7 +61,7 @@ html, body {
   text-transform: uppercase;
 }
 .page-content{
-  padding: 5px 30px;
+  padding: 25px 30px;
 }
 
 
@@ -207,7 +207,51 @@ html, body {
 }
 
 /*Forms*/
+form {
+  padding-left: 20px;
 
+  label{
+    margin-right: 15px;
+  }
+  input{
+    margin-bottom: 10px;
+
+    &[type="text" i] {
+      width: 60.5%;
+      padding: 5px;
+    }
+
+   &[type="date" i] {
+      width: 40%;
+      padding: 5px 0 5px 10px;
+    }
+
+    &[type="time" i] {
+      width: 20%;
+      padding: 5px 0 5px 10px;
+    }
+
+    &[type="submit" i] {
+      width: 79.5%;
+      padding: 5px;
+      margin-top: 10px;
+    }
+
+
+
+  }
+
+  .submit{
+    text-align: left;
+  }
+
+}
+
+fieldset {
+  max-width: 75%;
+  padding-top:20px;
+  padding-bottom:20px;
+}
 /*end of Forms*/
 
 /*Footer properties*/

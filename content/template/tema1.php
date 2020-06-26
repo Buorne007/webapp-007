@@ -25,10 +25,10 @@
 
     <?php require "admin/section/content-area.php";?>
 </div>
-<footer>
+<div id="footer" class="footer">
     <!-- load footer -->
     <?php require "admin/section/footer.php";?>
-</footer>
+</div>
 </body>
 
 </html>

@@ -10,10 +10,11 @@ echo"<title> $page_title - $site</title>";
 <div id="page-content" class="page-content">
     <body>
     <form action='?page=Start' target='_self' method='post'>
-        <!--<fieldset> -->
-        <label for='vm_name'>Machine Name:</label>
+
+        <label for='vm_name'>Machine Name</label>
         <input id='vm_name' name='vm_name' type='text' placeholder='insert machine name'><br>
-        <label for='vm_action'>Action:</label><br>
+        <fieldset>
+            <legend>Action</legend>
         <input id='vm_start' type='radio' name='vm_action' value='startvm'>
         <label for='vm_start'>Start</label>
         <input id="start_date" type="date" name="action_date">
@@ -23,9 +24,10 @@ echo"<title> $page_title - $site</title>";
         <label for='vm_stop'> Stop</label>
         <input id="start_date" type="date" name="action_date">
         <input type="time" name="action_time">
-        <br>
+        </fieldset>
+        <div id="submit" class="submit">
         <input type='submit' name='submit-action' value='Esegui'>
-        <!--</fieldset> -->
+        </div>
     </form>
     </body>
 </div>

@@ -12,13 +12,13 @@ echo"<title> $page_title - $site</title>";
     <body>
 <!--    <form class="form-horizontal">-->
 <!---->
-<!--            <!-- Text input-->-->
+<!--             Text input-->
 <!--            <div class="form-group">-->
 <!--                <label class="col-md-4 control-label" for="textinput">Machine Name</label>-->
 <!--                    <input id="textinput" name="vmname" type="text" placeholder="enter machine name" class="form-control input-md" required="">-->
 <!--            </div>-->
 <!---->
-<!--            <!-- Multiple Radios -->-->
+<!--         Multiple Radios -->
 <!--            <div class="form-group">-->
 <!--                <label class="col-md-4 control-label" for="vm_action">Action</label>-->
 <!--                    <div class="radio">-->
@@ -33,8 +33,8 @@ echo"<title> $page_title - $site</title>";
 <!--                    </div>-->
 <!--            </div>-->
 <!---->
-<!--            <!-- Button -->-->
-<!--            <div class="form-group">-->
+<!--          Button
+           <div class="form-group">-->
 <!--                <label class="col-md-4 control-label" for="singlebutton"></label>-->
 <!--                <div class="col-md-4">-->
 <!--                    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Esegui</button>-->
@@ -44,15 +44,18 @@ echo"<title> $page_title - $site</title>";
 
         <form action='?page=Start' target='_self' method='post'>
 
-                <label for='vm_name'>Machine Name:</label>
+                <label for='vm_name'>Machine Name</label>
                 <input id='vm_name' name='vmname' type='text' placeholder='insert machine name'><br>
-                <label for='vm_action'>Action:</label>
+            <fieldset>
+                <legend>Action</legend>
                 <input id='vm_start' type='radio' name='vm_action' value='startvm'>
                 <label for='vm_start'>Start</label>
                 <input id='vm_stop' type='radio' name='vm_action' value='stopvm'>
                 <label for='vm_stop'> Stop</label><br>
-                <input type='submit' name='submit-action' value='Esegui'>
-
+            </fieldset>
+            <div id="submit" class="submit">
+            <input type='submit' name='submit-action' value='Esegui'>
+            </div>
         </form>
 
     </body>
