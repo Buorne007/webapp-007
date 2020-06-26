@@ -19,6 +19,7 @@ if(isset($_POST['submit-action'])){
     $data = array(
       "action" => "$action",
       "vmname" => "$vm_name"
+        //add new value for date and time schedulazione below here
     );
 
     //change data to URL json format for post
